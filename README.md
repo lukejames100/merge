@@ -1,42 +1,66 @@
-# merge
-English: A high-speed, zero-dependency Python tool to merge YouTube Video (MP4/WebM) and Audio (M4A/WebA) files using FFmpeg. Supports drag-and-drop &amp; Python 3.12+. 日本語: FFmpegを使用してYouTubeの映像と音声を高速に合成するPythonツール。ドラッグ&amp;ドロップ対応、Python 3.12最適化済み。
+# YouTube Video & Audio Merger (One-Click EXE)
+### 映像と音声の合成ツール (実行ファイル版)
 
-# YouTube Video & Audio Merger (FFmpeg-based)
-### 映像と音声の合成ツール (FFmpegベース)
+A simple, ultra-fast tool to merge YouTube Video-only files (MP4/WebM) and Audio-only files (M4A/WebA) into a single high-quality MP4. No Python installation required!
 
-A simple, lightweight Python tool to merge YouTube video-only files (MP4/WebM) with audio-only files (M4A/WebA). Designed for Python 3.12+ and supports drag-and-drop.
-
-YouTubeからダウンロードした無音動画（MP4/WebM）と音声ファイル（M4A/WebA）を素早く合成する、軽量なPythonツールです。Python 3.12以降に対応し、ドラッグ＆ドロップ操作をサポートしています。
+YouTubeからダウンロードした映像（MP4/WebM）と音声（M4A/WebA）を、画質劣化なしで素早く合成するツールです。Pythonのインストールは不要で、すぐにお使いいただけます。
 
 ---
 
-## ✨ Features / 特徴
+## 📥 Download / ダウンロード
 
-* **Fast Merging**: Uses stream copying (`-c:v copy`), meaning no quality loss and near-instant processing.
-    * **高速合成**: ストリームコピー（`-c:v copy`）を使用するため、画質の劣化がなく、一瞬で処理が完了します。
-* **Format Support**: Works with `.mp4`, `.webm`, `.m4a`, `.weba`.
-    * **対応フォーマット**: `.mp4`, `.webm`, `.m4a`, `.weba` に対応。
-* **User Friendly**: Bilingual interface (English/Japanese) and drag-and-drop support.
-    * **ユーザーフレンドリー**: 英語と日本語のバイリンガル表示、ドラッグ＆ドロップ操作に対応。
-* **EXE Compatible**: Ready to be packaged with PyInstaller.
-    * **EXE対応**: PyInstallerによる実行ファイル化が可能です。
+You can download the ready-to-use executable files from Google Drive:
+以下のGoogleドライブリンクから、すぐに使える実行ファイルをダウンロードしてください：
+
+👉 **[Download from Google Drive / Googleドライブからダウンロード](https://drive.google.com/drive/folders/1Grikl0DZ3pECZwAfqem8g_NOlogPDVbV?usp=drive_link)**
+
+> **Note**: Please download both `merge.exe` and `ffmpeg.exe`.
+> **注意**: `merge.exe` と `ffmpeg.exe` の両方をダウンロードしてください。
 
 ---
 
 ## 🚀 How to Use / 使い方
 
-### Method 1: Running with Python / Pythonで実行する場合
+1.  **Place Files**: Put `merge.exe` and `ffmpeg.exe` in the same folder.
+    * **準備**: `merge.exe` と `ffmpeg.exe` を同じフォルダに置きます。
+2.  **Run**: Double-click `merge.exe`.
+    * **実行**: `merge.exe` をダブルクリックして起動します。
+3.  **Drag & Drop**: 
+    * When prompted, drag your **Video file** into the window and press **Enter**.
+    * Then, drag your **Audio file** into the window and press **Enter**.
+    * **操作**: 
+        * 指示に従って**映像ファイル**をウィンドウにドラッグし、**Enter**を押します。
+        * 次に**音声ファイル**をドラッグし、**Enter**を押します。
+4.  **Done**: The merged file `*_merged.mp4` will be created in the same folder instantly.
+    * **完了**: 合成されたファイル `*_merged.mp4` が同じフォルダ内に一瞬で生成されます。
 
-1.  **Download FFmpeg**: Download `ffmpeg.exe` and place it in the same directory as `merge.py`.
-    * **FFmpegの準備**: `ffmpeg.exe` をダウンロードし、`merge.py` と同じフォルダに配置してください。
-2.  **Run the script / 実行**:
-    ```bash
-    python merge.py
-    ```
-3.  **Drag & Drop**: Drag your video file into the window, press Enter, then drag your audio file and press Enter.
-    * **操作**: 映像ファイルをウィンドウにドラッグしてEnter、次に音声ファイルをドラッグしてEnterを押すだけです。
+---
 
-### Method 2: Create an EXE / EXEファイルを作成する場合
+## ✨ Features / 特徴
+
+* **No Installation**: Runs directly on Windows.
+    * **インストール不要**: Windows上でそのまま動作します。
+* **Zero Quality Loss**: Uses stream-copy technology to ensure original quality.
+    * **画質劣化なし**: ストリームコピー技術により、元の画質を完全に維持します。
+* **Fast Processing**: Completes merging in seconds.
+    * **超高速**: 数秒で合成が完了します。
+* **Format Support**: MP4, WebM, M4A, WebA.
+    * **対応フォーマット**: YouTubeの主要な形式をすべてサポート。
+
+---
+
+## 🛠 Prerequisites / 必要条件
+
+* Windows OS
+* `ffmpeg.exe` must be in the same directory as `merge.exe`.
+* `ffmpeg.exe` は必ず `merge.exe` と同じディレクトリに置いてください。
+
+---
+
+## 📝 License / ライセンス
+
+MIT License. Free to use and distribute.
+MITライセンス。自由に使用・配布可能です。
 ![螢幕擷取畫面 2026-02-17 004819](https://github.com/user-attachments/assets/6403bd0a-bf78-462a-b86b-4ab676d4e5aa)
 
 
